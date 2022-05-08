@@ -145,7 +145,7 @@ class BetterPlayerConfiguration {
     this.routePageBuilder,
     this.eventListener,
     this.subtitlesConfiguration = const BetterPlayerSubtitlesConfiguration(),
-    this.controlsConfiguration = const BetterPlayerControlsConfiguration(),
+    this.controlsConfiguration = BetterPlayerControlsConfiguration(),
     this.fit = BoxFit.fill,
     this.rotation = 0,
     this.playerVisibilityChangedBehavior,

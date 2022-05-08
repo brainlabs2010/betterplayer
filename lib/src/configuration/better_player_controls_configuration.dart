@@ -161,6 +161,8 @@ class BetterPlayerControlsConfiguration {
   ///Color of text in bottom modal sheet used for overflow menu items.
   final Color overflowModalTextColor;
 
+  final Function exitCallback;
+
   const BetterPlayerControlsConfiguration({
     this.controlBarColor = Colors.black87,
     this.textColor = Colors.white,
@@ -198,7 +200,13 @@ class BetterPlayerControlsConfiguration {
     this.enableQualities = true,
     this.enablePip = true,
     this.enableRetry = true,
-    this.overflowMenuCustomItems,
+    this.overflowMenuCustomItems = const [
+      BetterPlayerOverflowMenuItem(
+        Icons.close,
+        "Exit",
+            () => exitCallback,
+      )
+    ],
     this.overflowMenuIcon = Icons.more_vert_outlined,
     this.pipMenuIcon = Icons.picture_in_picture_outlined,
     this.playbackSpeedIcon = Icons.shutter_speed_outlined,

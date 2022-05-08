@@ -118,7 +118,7 @@ class BetterPlayerConfiguration {
   ///Default value is false.
   final bool useRootNavigator;
 
-  const BetterPlayerConfiguration({
+  BetterPlayerConfiguration({
     this.aspectRatio,
     this.autoPlay = false,
     this.startAt,
